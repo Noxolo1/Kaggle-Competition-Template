@@ -4,6 +4,8 @@ models/
 .ipynb_checkpoints/
 __pycache__/
 .env
+.DS_store
+.DS_Store
 
 
 # Byte-compiled / optimized / DLL files
