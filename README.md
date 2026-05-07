@@ -19,8 +19,8 @@ Repo template for Kaggle Competitions
 ├── models/                 # Git-ignored: Saved .pth, .h5, or .pkl files
 ├── submissions/            # CSV files ready for upload
 ├── configs/                # YAML or JSON files for hyperparameters
-├── tests/                  # Unit tests for your data pipeline
-├── .gitignore              # Crucial: ignore data/ and models/
+├── tests/                  # Unit tests for your data pipeline (rarely used) 
+├── .gitignore              
 ├── README.md               # Summary, approach, and hardware used
-└── requirements.txt        # Exact library versions
+└── requirements.txt        
 ```
