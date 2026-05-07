@@ -1,5 +1,6 @@
 # Kaggle-Competition-Template
 Repo template for Kaggle Competitions
+```
 {{Competition-Name}}/
 ├── data/                   # Git-ignored
 │   ├── raw/                # Original data from Kaggle
@@ -22,3 +23,4 @@ Repo template for Kaggle Competitions
 ├── .gitignore              # Crucial: ignore data/ and models/
 ├── README.md               # Summary, approach, and hardware used
 └── requirements.txt        # Exact library versions
+```
