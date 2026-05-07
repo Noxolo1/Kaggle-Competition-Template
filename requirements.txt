@@ -1,0 +1,24 @@
+# general 
+pandas
+numpy
+scikit-learn
+matplotlib
+pathlib
+ipykernel
+
+# torch
+# will need cuda installed to use cuda version
+--extra-index-url https://download.pytorch.org/whl/cu121
+# Windows with CUDA 12.1 support
+torch==2.2.1+cu121; sys_platform == 'win32'
+torchvision==0.17.1+cu121; sys_platform == 'win32'
+torchaudio==2.2.1+cu121; sys_platform == 'win32'
+# Linux and macOS (CPU or MPS)
+torch==2.2.1; sys_platform != 'win32'
+torchvision==0.17.1; sys_platform != 'win32'
+torchaudio==2.2.1; sys_platform != 'win32'
+
+# models 
+lightgbm 
+xgboost
+catboost
