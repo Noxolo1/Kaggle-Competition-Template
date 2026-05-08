@@ -2,7 +2,7 @@
 Repo template for Kaggle Competitions
 ```
 {{Competition-Name}}/
-├── data/                   # Data source
+├── data/                   # Local data storage
 ├── notebooks/              # Jupyter notebooks
 │   ├── eda/                # Exploratory Data Analysis
 │   ├── experimental/       # Messy testing/brainstorming
