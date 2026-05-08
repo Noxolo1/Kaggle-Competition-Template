@@ -2,10 +2,7 @@
 Repo template for Kaggle Competitions
 ```
 {{Competition-Name}}/
-├── data/                   # Git-ignored
-│   ├── raw/                # Original data from Kaggle
-│   ├── processed/          # Cleaned/engineered features
-│   └── external/           # Data from outside sources
+├── data/                   # Data source
 ├── notebooks/              # Jupyter notebooks
 │   ├── eda/                # Exploratory Data Analysis
 │   ├── experimental/       # Messy testing/brainstorming
