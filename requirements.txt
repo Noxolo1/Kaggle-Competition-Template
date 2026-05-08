@@ -7,7 +7,8 @@ pathlib
 ipykernel
 
 # torch
-# will need cuda installed to use cuda version
+# will need cuda and nvidia driver installed 
+# if on wsl, install only the cuda toolkit - wsl will use the windows nvidia driver 
 --extra-index-url https://download.pytorch.org/whl/cu121
 # Windows with CUDA 12.1 support
 torch==2.2.1+cu121; sys_platform == 'win32'
