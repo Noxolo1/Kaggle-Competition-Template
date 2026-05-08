@@ -6,7 +6,8 @@ Repo template for Kaggle Competitions
 ├── notebooks/              # Jupyter notebooks
 │   ├── eda/                # Exploratory Data Analysis
 │   ├── experimental/       # Messy testing/brainstorming
-│   └── final_submissions/  # Clean versions of winning kernels
+│   ├── final_submissions/  # Clean versions of winning kernels
+│   └── template.ipynb      # Template notebook with helper functions
 ├── src/                    # Modular Python source code
 │   ├── __init__.py
 │   ├── data_loader.py      # Preprocessing & augmentation
