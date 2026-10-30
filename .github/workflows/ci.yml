@@ -1,5 +1,8 @@
 name: Template checks
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, reopened, edited, ready_for_review]
 permissions:
   contents: read
 concurrency:
@@ -41,3 +44,16 @@ jobs:
           python-version: "3.12"
       - run: uv export --locked --no-dev --no-emit-project --no-hashes -o audit-requirements.txt
       - run: uv run --locked --extra dev pip-audit -r audit-requirements.txt
+
+  conventions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/check_git_conventions.py github-event

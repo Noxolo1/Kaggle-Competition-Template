@@ -178,3 +178,11 @@ models/                    Custom saved models (ignored)
 submissions/               Custom submission exports (ignored)
 pyproject.toml / uv.lock    Dependency definitions and resolved versions
 ```
+
+## Git workflow
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for conventional commits, branch naming,
+local hooks, and pull request checks. After environment setup, enable this clone's
+hooks with `git config --local core.hooksPath .githooks`. Work on branches such as
+`feat/add-folds` or `codex/fix/submission-order`, and use subjects such as
+`feat(validation): add grouped folds`. CI checks PR titles and new commits too.
