@@ -1,0 +1,10 @@
+{
+  "target": "target",
+  "id_column": "id",
+  "task": "regression",
+  "competition": "",
+  "prediction": "label",
+  "split": "random",
+  "validation_size": 0.2,
+  "seed": 42
+}

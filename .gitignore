@@ -231,3 +231,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Competition artifacts and credentials
+submissions/
+runs/
+.env.*
+!.env.example
+kaggle.json
+.kaggle/
+*.pem
+*.key
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.onnx

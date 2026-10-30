@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaggle-competition-template"
+version = "0.1.0"
+description = "Reusable Kaggle competition workflow and validation helpers"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.5,<2"]
+
+[project.optional-dependencies]
+notebook = ["ipykernel>=6,<8", "matplotlib>=3.8,<4"]
+boosting = ["xgboost>=2,<4", "lightgbm>=4,<5", "catboost>=1.2,<2"]
+kaggle = ["kaggle>=1.6,<3"]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "nbformat>=5.10,<6", "pip-audit>=2.7,<3"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
